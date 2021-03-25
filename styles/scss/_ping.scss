@@ -1,0 +1,155 @@
+.ping__header   {
+    padding: 5rem 0 2rem;
+}
+
+.ping__main {
+    padding: 0 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ping__heading {
+    padding-bottom: 1rem;
+    font-size: 1.325rem;
+    font-weight: $light;
+    line-height: 2rem;
+    color: $grey;
+
+    &__accent {
+        font-weight: $bold;
+        color: $darkBlue;
+    }
+}
+
+.ping__form {
+    max-width: 20rem;
+    margin: auto;
+    padding: 0 1.25rem 2.5rem;
+}
+
+.ping__form__intro {
+    padding-bottom: 2rem;
+    font-size: 0.75rem;
+    font-weight: $light;
+    line-height: 1rem;
+    color: $darkBlue;
+}
+
+.ping__form__control {
+    margin-bottom: 0.625rem;
+}
+
+.ping__form__input {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 2rem;
+    border: 1px solid $paleBlue;
+    border-radius: 1.75rem;
+    font-size: 0.75rem;
+    font-weight: $light;
+    line-height: 1.25rem;
+    color: $darkBlue;
+    transition: box-shadow 200ms ease-in-out;
+
+    &::placeholder {
+        color: $paleBlue;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow:  0 0 8px 4px $paleBlue;
+    }
+
+    &.not-valid {
+        border: 1px solid $lightRed;
+    }
+}
+
+.ping__form__error {
+    display: block;
+    width: 100%;
+    padding-bottom: 0.625rem;
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: $lightRed;
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.ping__form__submit {
+    position: relative;
+    width: 100%;
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 1.75rem;
+    background-color: $blue;
+    font-weight: $semiBold;
+    line-height: 1rem;
+    color: $white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+    transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 
+            0px 5px 10px 2px rgba(76, 123, 243, 0.230414),
+            0 0 8px 4px $paleBlue;
+    }
+}
+
+.ping__illustration {
+    height: 50vw;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto 7.5rem;
+    background-image: url('/images/illustration-dashboard.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ping__footer {
+    margin-bottom: 2.25rem;
+    text-align: center;
+}
+
+.ping__footer__socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+    text-align: center;
+}
+
+.ping__footer__socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.375rem;
+    border: 1px solid $paleBlue;
+    border-radius: 50%;
+    color: $blue;
+    transition: 
+    background-color 200ms ease-in-out, color 200ms ease-in-out;
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+.ping__footer__copy {
+    font-size: 0.625rem;
+    font-weight: $light;
+    line-height: 0.75rem;
+    color: $grey;
+}
