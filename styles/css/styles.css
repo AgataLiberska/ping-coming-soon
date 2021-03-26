@@ -182,9 +182,18 @@ main {
   width: 100%;
   padding-bottom: 0.625rem;
   font-size: 0.625rem;
+  font-style: italic;
   line-height: 1.25rem;
   text-align: center;
   color: #ff5263;
+}
+
+@media (min-width: 48rem) {
+  .ping__form__error {
+    margin-left: 2rem;
+    font-size: 0.75rem;
+    text-align: left;
+  }
 }
 
 .ping__form__error.hidden {

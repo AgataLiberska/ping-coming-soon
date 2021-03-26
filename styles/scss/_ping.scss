@@ -110,9 +110,16 @@
     width: 100%;
     padding-bottom: 0.625rem;
     font-size: 0.625rem;
+    font-style: italic;
     line-height: 1.25rem;
     text-align: center;
     color: $lightRed;
+
+    @media (min-width: $tablet) {
+        margin-left: 2rem;
+        font-size: 0.75rem;
+        text-align: left;
+    }
 
     &.hidden {
         display: none;

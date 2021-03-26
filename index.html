@@ -8,6 +8,9 @@
   <script src="https://kit.fontawesome.com/7d1424b7c5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/styles/css/styles.css">
   
+
+  <script src="script/script.js" defer></script>
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
 
@@ -19,12 +22,12 @@
   <main>
     <section class="ping__main">
       <h1 class="ping__heading">We are launching <span class="ping__heading__accent">soon!</span></h1>
-      <form class="ping__form">
+      <form class="ping__form js-form">
         <p class="ping__form__intro">Subscribe and get notified</p>
         <div class="ping__form__container">
           <div class="ping__form__control">
-            <input type="email" placeholder="Your email address..." aria-label="Your email address" class="ping__form__input">
-            <span class="ping__form__error hidden">Please provide a valid email address</span>
+            <input type="email" placeholder="Your email address..." aria-label="Your email address" class="ping__form__input js-email">
+            <span class="ping__form__error  js-error">Please provide a valid email address</span>
           </div>
           <button class="ping__form__submit">Notify Me</button>
         </div>
