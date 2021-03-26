@@ -200,7 +200,8 @@
     transition: 
     background-color 200ms ease-in-out, color 200ms ease-in-out;
 
-    &:hover {
+    &:hover, &:focus {
+        outline: 0;
         background-color: $blue;
         color: $white;
     }

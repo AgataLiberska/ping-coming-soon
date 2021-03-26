@@ -292,7 +292,8 @@ main {
   transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-.ping__footer__socials__link:hover {
+.ping__footer__socials__link:hover, .ping__footer__socials__link:focus {
+  outline: 0;
   background-color: #4f7df3;
   color: #ffffff;
 }
