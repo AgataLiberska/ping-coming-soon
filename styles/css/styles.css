@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Libre Franklin", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.ping__header {
+  padding: 5rem 0 2rem;
+}
+
+@media (min-width: 48rem) {
+  .ping__header {
+    padding: 5rem 0 2.5rem;
+  }
+}
+
+.ping__main {
+  padding: 0 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ping__heading {
+  padding-bottom: 1rem;
+  font-size: 1.325rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: #969696;
+}
+
+.ping__heading__accent {
+  font-weight: 700;
+  color: #151f29;
+}
+
+@media (min-width: 48rem) {
+  .ping__heading {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+}
+
+.ping__form {
+  max-width: 20rem;
+  margin: auto;
+  padding: 0 1.25rem 2.5rem;
+}
+
+@media (min-width: 48rem) {
+  .ping__form {
+    max-width: 40rem;
+  }
+}
+
+.ping__form__intro {
+  padding-bottom: 2rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1rem;
+  color: #151f29;
+}
+
+@media (min-width: 48rem) {
+  .ping__form__intro {
+    padding-bottom: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .ping__form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.ping__form__control {
+  margin-bottom: 0.625rem;
+}
+
+@media (min-width: 48rem) {
+  .ping__form__control {
+    width: 66%;
+  }
+}
+
+.ping__form__input {
+  display: block;
+  max-height: 2.5rem;
+  width: 100%;
+  padding: 0.625rem 2rem;
+  border: 1px solid #c2d3ff;
+  border-radius: 1.75rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  color: #151f29;
+  -webkit-transition: -webkit-box-shadow 200ms ease-in-out;
+  transition: -webkit-box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+}
+
+.ping__form__input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.ping__form__input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.ping__form__input::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.ping__form__input::placeholder {
+  color: #c2d3ff;
+}
+
+.ping__form__input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 8px 4px #c2d3ff;
+          box-shadow: 0 0 8px 4px #c2d3ff;
+}
+
+.ping__form__input.not-valid {
+  border: 1px solid #ff5263;
+}
+
+@media (min-width: 48rem) {
+  .ping__form__input {
+    display: inline-block;
+    max-height: 3.5rem;
+    padding: 1.125rem 2rem;
+  }
+}
+
+.ping__form__error {
+  display: block;
+  width: 100%;
+  padding-bottom: 0.625rem;
+  font-size: 0.625rem;
+  font-style: italic;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #ff5263;
+}
+
+@media (min-width: 48rem) {
+  .ping__form__error {
+    margin-left: 2rem;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+}
+
+.ping__form__error.hidden {
+  display: none;
+}
+
+.ping__form__submit {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0;
+  border-radius: 1.75rem;
+  background-color: #4f7df3;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+          box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+  -webkit-transition: opacity 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+}
+
+.ping__form__submit:hover {
+  opacity: 0.8;
+}
+
+.ping__form__submit:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 8px 4px #c2d3ff, 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+          box-shadow: 0 0 8px 4px #c2d3ff, 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+}
+
+@media (min-width: 48rem) {
+  .ping__form__submit {
+    width: 31%;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    padding: 1.125rem;
+  }
+}
+
+.ping__illustration {
+  height: 50vw;
+  width: 100%;
+  max-width: 40rem;
+  max-height: 26rem;
+  margin: 0 auto 7.5rem;
+  background-image: url("/images/illustration-dashboard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 48rem) {
+  .ping__illustration {
+    margin: 0 auto 4.5rem;
+  }
+}
+
+.ping__footer {
+  margin-bottom: 2.25rem;
+  text-align: center;
+}
+
+.ping__footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.ping__footer__socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.375rem;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  color: #4f7df3;
+  -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.ping__footer__socials__link:hover {
+  background-color: #4f7df3;
+  color: #ffffff;
+}
+
+.ping__footer__copy {
+  font-size: 0.625rem;
+  font-weight: 300;
+  line-height: 0.75rem;
+  color: #969696;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -5,30 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/7d1424b7c5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/css/styles.css">
   
+
+  <script src="script/script.js" defer></script>
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <header class="ping__header">
+    <img src="/images/logo.svg" alt="Ping logo">
+  </header>
+  <main>
+    <section class="ping__main">
+      <h1 class="ping__heading">We are launching <span class="ping__heading__accent">soon!</span></h1>
+      <form class="ping__form js-form">
+        <p class="ping__form__intro">Subscribe and get notified</p>
+        <div class="ping__form__container">
+          <div class="ping__form__control">
+            <input type="email" placeholder="Your email address..." aria-label="Your email address" class="ping__form__input js-email">
+            <span class="ping__form__error hidden js-error">Please provide a valid email address</span>
+          </div>
+          <button class="ping__form__submit">Notify Me</button>
+        </div>
+      </form>
+      <div class="ping__illustration">
+      </div>
+    </section>
+  </main>
+  <footer class="ping__footer">
+    <div class="ping__footer__socials">
+      <a href="/" aria-label="Facebook" class="ping__footer__socials__link"><i class="fab fa-facebook-f"></i></a>
+      <a href="/" aria-label="Twitter" class="ping__footer__socials__link"><i class="fab fa-twitter"></i></a>
+      <a href="/" aria-label="Instagram" class="ping__footer__socials__link"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p class="ping__footer__copy">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
 </body>
 </html>

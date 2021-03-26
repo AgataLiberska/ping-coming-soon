@@ -1,0 +1,214 @@
+.ping__header   {
+    padding: 5rem 0 2rem;
+
+    @media (min-width: $tablet) {
+        padding: 5rem 0 2.5rem;
+    }
+}
+
+.ping__main {
+    padding: 0 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ping__heading {
+    padding-bottom: 1rem;
+    font-size: 1.325rem;
+    font-weight: $light;
+    line-height: 2rem;
+    color: $grey;
+
+    &__accent {
+        font-weight: $bold;
+        color: $darkBlue;
+    }
+
+    @media (min-width: $tablet) {
+        font-size: 3rem;
+        line-height: 3.75rem;
+    }
+}
+
+.ping__form {
+    max-width: 20rem;
+    margin: auto;
+    padding: 0 1.25rem 2.5rem;
+
+    @media (min-width: $tablet) {
+        max-width: 40rem;
+    }
+}
+
+.ping__form__intro {
+    padding-bottom: 2rem;
+    font-size: 0.75rem;
+    font-weight: $light;
+    line-height: 1rem;
+    color: $darkBlue;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 2.5rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
+
+.ping__form__container {
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:100%;
+    }
+}
+
+.ping__form__control {
+    margin-bottom: 0.625rem;
+
+    @media (min-width: $tablet) {
+        width: 66%;
+    }
+}
+
+.ping__form__input {
+    display: block;
+    max-height: 2.5rem;
+    width: 100%;
+    padding: 0.625rem 2rem;
+    border: 1px solid $paleBlue;
+    border-radius: 1.75rem;
+    font-size: 0.75rem;
+    font-weight: $light;
+    line-height: 1.25rem;
+    color: $darkBlue;
+    transition: box-shadow 200ms ease-in-out;
+
+    &::placeholder {
+        color: $paleBlue;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow:  0 0 8px 4px $paleBlue;
+    }
+
+    &.not-valid {
+        border: 1px solid $lightRed;
+    }
+
+    @media (min-width: $tablet) {
+        display: inline-block;
+        max-height: 3.5rem;
+
+        padding: 1.125rem 2rem;
+    }
+}
+
+.ping__form__error {
+    display: block;
+    width: 100%;
+    padding-bottom: 0.625rem;
+    font-size: 0.625rem;
+    font-style: italic;
+    line-height: 1.25rem;
+    text-align: center;
+    color: $lightRed;
+
+    @media (min-width: $tablet) {
+        margin-left: 2rem;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.ping__form__submit {
+    width: 100%;
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 1.75rem;
+    background-color: $blue;
+    font-size: 0.75rem;
+    font-weight: $semiBold;
+    line-height: 1rem;
+    color: $white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+    transition: box-shadow 200ms ease-in-out, opacity 200ms ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 
+            0 0 8px 4px $paleBlue,
+            0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+    }
+
+    @media (min-width: $tablet) {
+        width: 31%;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+        padding: 1.125rem;
+    }
+}
+
+.ping__illustration {
+    height: 50vw;
+    width: 100%;
+    max-width: 40rem;
+    max-height: 26rem;
+    margin: 0 auto 7.5rem;
+    background-image: url('/images/illustration-dashboard.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: $tablet) {
+        margin: 0 auto 4.5rem;
+    }
+}
+
+.ping__footer {
+    margin-bottom: 2.25rem;
+    text-align: center;
+}
+
+.ping__footer__socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+    text-align: center;
+}
+
+.ping__footer__socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0.375rem;
+    border: 1px solid $paleBlue;
+    border-radius: 50%;
+    color: $blue;
+    transition: 
+    background-color 200ms ease-in-out, color 200ms ease-in-out;
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+.ping__footer__copy {
+    font-size: 0.625rem;
+    font-weight: $light;
+    line-height: 0.75rem;
+    color: $grey;
+}
