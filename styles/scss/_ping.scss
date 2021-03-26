@@ -85,7 +85,8 @@
     transition: box-shadow 200ms ease-in-out;
 
     &::placeholder {
-        color: $paleBlue;
+        color: $medBlue;
+        opacity: 1;
     }
 
     &:focus {

@@ -144,19 +144,23 @@ main {
 }
 
 .ping__form__input::-webkit-input-placeholder {
-  color: #c2d3ff;
+  color: #8fa6db;
+  opacity: 1;
 }
 
 .ping__form__input:-ms-input-placeholder {
-  color: #c2d3ff;
+  color: #8fa6db;
+  opacity: 1;
 }
 
 .ping__form__input::-ms-input-placeholder {
-  color: #c2d3ff;
+  color: #8fa6db;
+  opacity: 1;
 }
 
 .ping__form__input::placeholder {
-  color: #c2d3ff;
+  color: #8fa6db;
+  opacity: 1;
 }
 
 .ping__form__input:focus {
