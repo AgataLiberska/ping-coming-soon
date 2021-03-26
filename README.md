@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [View the solution](https://your-solution-url.com)
+- [View the solution](https://www.frontendmentor.io/solutions/scss-bem-methodology-and-vanilla-js-for-form-validation-Z42WyWaSk)
 - [View live site](https://ping-coming-soon-five.vercel.app/)
 
 ## Built with
